@@ -1,19 +1,21 @@
 class LoginPage {
-  visit() {
-    cy.visit('/commands/actions'); // URL de exemplo do Cypress
+  visitar() {
+    cy.visit('/commands/actions'); // URL de exemplo
   }
 
-  fillEmail(email) {
+  preencherEmail(email) {
     cy.get('.action-email').type(email);
   }
 
-  fillPassword(password) {
-    // Exemplo genérico, pois a página de exemplo não tem todos os campos
-    // cy.get('#password').type(password);
+  preencherSenha(senha) {
+    // Como a página de exemplo não tem campo de senha padrão, usamos um seletor genérico ou logamos para simular
+    cy.log('Preenchendo senha:', senha);
+    // Exemplo: cy.get('#password').type(senha);
   }
 
-  submit() {
-    // cy.get('button[type="submit"]').click();
+  submeter() {
+    // Exemplo: cy.get('button[type="submit"]').click();
+    cy.log('Submetendo formulário de login');
   }
 }
 

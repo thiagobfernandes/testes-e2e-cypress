@@ -1,6 +1,8 @@
-Cypress.Commands.add('login', (email, password) => {
-  cy.visit('/commands/actions');
-  cy.get('.action-email').type(email);
-  // Simulação de login
-  cy.log('Logando com:', email);
+import LoginPage from './pages/LoginPage';
+
+Cypress.Commands.add('login', (email, senha) => {
+  LoginPage.visitar();
+  LoginPage.preencherEmail(email);
+  LoginPage.preencherSenha(senha);
+  LoginPage.submeter();
 });
