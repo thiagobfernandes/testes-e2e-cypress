@@ -1,0 +1,16 @@
+{
+  "name": "testes-e2e-cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "cypress run",
+    "test:e2e:open": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^15.13.0"
+  }
+}
